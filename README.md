@@ -1,13 +1,13 @@
-from typing import Tuple, List, Dict
-
-class Jacksony:
-    pass
-
-class Attributes(Jacksony):
-    @property
-    def contact(self) -> Tuple[str, str]:
-        telegram = "t.me/Jacksony100"
-        channel  = "t.me/Smesharik_lair"
+    from typing import Tuple, List, Dict
+    
+    class Jacksony:
+        pass
+    
+    class Attributes(Jacksony):
+        @property
+        def contact(self) -> Tuple[str, str]:
+            telegram = "t.me/Jacksony100"
+            channel  = "t.me/Smesharik_lair"
         
         return telegram, channel
 
@@ -41,15 +41,15 @@ class Attributes(Jacksony):
     
     def __str__(self) -> str:
         ascii_banner = r"""
- ________      ________      ________      ___  ___      _________        _____ ______       _______      
-|\   __  \    |\   __  \    |\   __  \    |\  \|\  \    |\___   ___\     |\   _ \  _   \    |\  ___ \     
-\ \  \|\  \   \ \  \|\ /_   \ \  \|\  \   \ \  \\\  \   \|___ \  \_|     \ \  \\\__\ \  \   \ \   __/|    
- \ \   __  \   \ \   __  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \\|__| \  \   \ \  \_|/__  
-  \ \  \ \  \   \ \  \|\  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \    \ \  \   \ \  \_|\ \ 
-   \ \__\ \__\   \ \_______\   \ \_______\   \ \_______\       \ \__\       \ \__\    \ \__\   \ \_______\
-    \|__|\|__|    \|_______|    \|_______|    \|_______|        \|__|        \|__|     \|__|    \|_______|                                                                                             
-"""
-        
+     ________      ________      ________      ___  ___      _________        _____ ______       _______      
+    |\   __  \    |\   __  \    |\   __  \    |\  \|\  \    |\___   ___\     |\   _ \  _   \    |\  ___ \     
+    \ \  \|\  \   \ \  \|\ /_   \ \  \|\  \   \ \  \\\  \   \|___ \  \_|     \ \  \\\__\ \  \   \ \   __/|    
+     \ \   __  \   \ \   __  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \\|__| \  \   \ \  \_|/__  
+      \ \  \ \  \   \ \  \|\  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \    \ \  \   \ \  \_|\ \ 
+       \ \__\ \__\   \ \_______\   \ \_______\   \ \_______\       \ \__\       \ \__\    \ \__\   \ \_______\
+        \|__|\|__|    \|_______|    \|_______|    \|_______|        \|__|        \|__|     \|__|    \|_______|                                                                                             
+    """
+
         contact_info = (
             f"Contact:\n"
             f"[+] Telegram: {self.contact[0]}\n"
@@ -74,6 +74,6 @@ class Attributes(Jacksony):
             f"[+] PC Specs   :\n{pc_info}"
         )
         return f"{ascii_banner}\n{contact_info}\n\n{life_info}\n\n{coding_info}"
-
-attributes = Attributes()
-print(attributes)
+    
+    attributes = Attributes()
+    print(attributes)                
