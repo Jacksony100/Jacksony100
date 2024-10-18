@@ -1,7 +1,10 @@
-    from typing import Tuple, List, Dict
-    
-    class Jacksony:
-        pass
+     ________      ________      ________      ___  ___      _________        _____ ______       _______      
+    |\   __  \    |\   __  \    |\   __  \    |\  \|\  \    |\___   ___\     |\   _ \  _   \    |\  ___ \     
+    \ \  \|\  \   \ \  \|\ /_   \ \  \|\  \   \ \  \\\  \   \|___ \  \_|     \ \  \\\__\ \  \   \ \   __/|    
+     \ \   __  \   \ \   __  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \\|__| \  \   \ \  \_|/__  
+      \ \  \ \  \   \ \  \|\  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \    \ \  \   \ \  \_|\ \ 
+       \ \__\ \__\   \ \_______\   \ \_______\   \ \_______\       \ \__\       \ \__\    \ \__\   \ \_______\
+        \|__|\|__|    \|_______|    \|_______|    \|_______|        \|__|        \|__|     \|__|    \|_______|             
     
     class Attributes(Jacksony):
         @property
@@ -38,42 +41,3 @@
         }
 
         return langs, specialities, ide, pc
-    
-    def __str__(self) -> str:
-        ascii_banner = r"""
-     ________      ________      ________      ___  ___      _________        _____ ______       _______      
-    |\   __  \    |\   __  \    |\   __  \    |\  \|\  \    |\___   ___\     |\   _ \  _   \    |\  ___ \     
-    \ \  \|\  \   \ \  \|\ /_   \ \  \|\  \   \ \  \\\  \   \|___ \  \_|     \ \  \\\__\ \  \   \ \   __/|    
-     \ \   __  \   \ \   __  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \\|__| \  \   \ \  \_|/__  
-      \ \  \ \  \   \ \  \|\  \   \ \  \\\  \   \ \  \\\  \       \ \  \       \ \  \    \ \  \   \ \  \_|\ \ 
-       \ \__\ \__\   \ \_______\   \ \_______\   \ \_______\       \ \__\       \ \__\    \ \__\   \ \_______\
-        \|__|\|__|    \|_______|    \|_______|    \|_______|        \|__|        \|__|     \|__|    \|_______|                                                                                             
-    """
-
-        contact_info = (
-            f"Contact:\n"
-            f"[+] Telegram: {self.contact[0]}\n"
-            f"[+] Channel : {self.contact[1]}"
-        )
-        life_info = (
-            f"Life:\n"
-            f"[+] Languages: {', '.join(self.life[0])}\n"
-            f"[+] Age      : {self.life[1]}"
-        )
-        
-        coding_langs = "\n".join([f"  [+] {level.title()}: {', '.join(langs)}" for level, langs in self.coding[0].items()])
-        specialities = ", ".join(self.coding[1])
-        ides = ", ".join(self.coding[2])
-        pc_info = "\n".join([f"  [+] {os}: {details}" for os, details in self.coding[3].items()])
-        
-        coding_info = (
-            f"Coding:\n"
-            f"[+] Languages:\n{coding_langs}\n"
-            f"[+] Specialities: {specialities}\n"
-            f"[+] IDEs       : {ides}\n"
-            f"[+] PC Specs   :\n{pc_info}"
-        )
-        return f"{ascii_banner}\n{contact_info}\n\n{life_info}\n\n{coding_info}"
-    
-    attributes = Attributes()
-    print(attributes)                
