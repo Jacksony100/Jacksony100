@@ -18,7 +18,7 @@
     @property
     def life(self) -> Tuple[List[str], int]:
         langs = ['Russian', 'English']
-        age   = 19
+        age   = 20
         
         return langs, age
     
