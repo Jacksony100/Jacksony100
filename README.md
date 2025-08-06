@@ -39,6 +39,12 @@
                     'gpu'      : 'nvidia RTX 4070 | CUDA cores'
                 }
             }
+             'Macbook': {
+                'custom': {
+                    'processor': 'M2',
+                    'ram'      : '16gb'
+                }
+            }
         }
 
         return langs, specialities, ide, pc
