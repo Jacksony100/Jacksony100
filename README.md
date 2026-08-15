@@ -25,9 +25,9 @@
     @property
     def coding(self) -> Tuple[Dict[str, List[str]], List[str], List[str], Dict[str, Dict[str, Dict[str, str]]]]:
         langs = {
-            'expert'      : ['c++', 'c#'],
-            'intermediate': ['python'],
-            'learning'    : ['go', 'asm', 'javascript']
+            'expert'      : ['c++', 'c#', 'javascript', 'python'],
+            'intermediate': ['go', 'Rust'],
+            'learning'    : ['asm']
         }
         specialities  = ['cybersecurity', 'web development', 'ai']
         ide           = ['vscode', 'visual studio', 'pycharm']
