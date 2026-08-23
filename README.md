@@ -31,7 +31,7 @@
         }
         specialities  = ['cybersecurity', 'web development', 'ai']
         ide           = ['vscode', 'visual studio', 'pycharm']
-        AI           = ['ChatGPT', 'Claude', 'Z Coder']
+        AI            = ['ChatGPT', 'Claude', 'Z Coder']
         pc            = {
             'Windows': {
                 'custom': {
